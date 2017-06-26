@@ -88,7 +88,7 @@ The random forest model has the best accuracy of the two.
 
 2. GBM Model:
 ```{r predictValid_gbm}
-#First for the Random Forest Model
+# Second for the GBM model
 Predict_gbm <- predict(modFit_gbm, validationSet)
 CM_GBM <- confusionMatrix(Predict_gbm, validationSet$classe)
 CM_GBM$overall

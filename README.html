@@ -197,7 +197,7 @@ CM_RF$overall</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>GBM Model:</li>
 </ol>
-<pre class="r"><code>#First for the Random Forest Model
+<pre class="r"><code># Second for the GBM model
 Predict_gbm &lt;- predict(modFit_gbm, validationSet)
 CM_GBM &lt;- confusionMatrix(Predict_gbm, validationSet$classe)
 CM_GBM$overall</code></pre>
